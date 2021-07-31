@@ -86,7 +86,7 @@ class _ReportDataTableState extends State<ReportDataTable> {
                       Container(
                         height: 45,
                         width: 250,
-                       // margin: EdgeInsets.only(left: 10),
+                        margin: EdgeInsets.only(left: width20),
                         decoration: BoxDecoration(
                             color: gridExcelBgColor,
                             borderRadius: BorderRadius.circular(10)
