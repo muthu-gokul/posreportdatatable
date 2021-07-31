@@ -78,7 +78,7 @@ class _ReportDataTableState extends State<ReportDataTable> {
                 Container(
                   height: height80,
                   width: double.maxFinite,
-                  padding: EdgeInsets.only(left: width20,right: width10),
+                  padding: EdgeInsets.only(right: width10),
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
