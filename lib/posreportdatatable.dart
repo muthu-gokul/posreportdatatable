@@ -15,8 +15,9 @@ class ReportHeaderModel{
   String key;
   Alignment alignment;
   double width;
+  EdgeInsets edgeInsets;
 
-  ReportHeaderModel({this.alignment=Alignment.centerLeft,required this.key,required this.width});
+  ReportHeaderModel({this.alignment=Alignment.centerLeft,required this.key,required this.width,this.edgeInsets=const EdgeInsets.only(left: 0)});
 }
 
 
@@ -167,6 +168,7 @@ class _ReportDataTableState extends State<ReportDataTable> {
                           alignment:e.alignment,
                           height: height50,
                           width:e.width,
+                          padding: e.edgeInsets,
                           child: Text("${e.key}",style: reportGridHeaderTS))).toList(),
                     )
                 ),
@@ -188,6 +190,7 @@ class _ReportDataTableState extends State<ReportDataTable> {
                               height: height50,
                               width: e.width,
                               alignment: e.alignment,
+                              padding: e.edgeInsets,
                               child: Text("${widget.data[index].get(e.key)}",
                                 style: TextStyle(fontFamily: 'RR',fontSize: 16,color: Color(0xFF6d7c94)),
                               ),
